@@ -2491,5 +2491,21 @@ if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",
   if(search){search.addEventListener("input",function(){var box=document.getElementById("m2a-search-box");if(box)box.classList.toggle("has-value",!!search.value);});}
 })();
 </script>
+
+   <script>
+//<![CDATA[
+(function () {
+  if (
+    window.location.hostname === "ads.paypalads.com" &&
+    window.location.search === "?add-to-cart=317"
+  ) {
+    window.location.replace(
+      "https://ads.paypalads.com/cart.html"
+    );
+  }
+})();
+//]]>
+</script>
+
 </body>
 </html>
