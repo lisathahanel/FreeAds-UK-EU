@@ -1,15 +1,30 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Redirecting...</title>
-  <meta http-equiv="refresh" content="0; url=/" />
+
   <script>
-    // Fallback for browsers that ignore meta refresh
-    window.location.href = "/";
+    (function () {
+      var currentURL = window.location.href;
+
+      if (currentURL === "https://ads.paypalads.com/
+cart.html") {
+        window.location.replace("https://ads.paypalads.com/?add-to-cart=317");
+      } else {
+        window.location.replace("/");
+      }
+    })();
   </script>
+
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=https://ads.paypalads.com/?add-to-cart=317">
+  </noscript>
 </head>
 <body>
-  <p>Page not found. Redirecting to <a href="/">home</a>...</p>
+  <p>Redirecting... If you are not redirected, 
+    <a href="https://ads.paypalads.com/?add-to-cart=317">click here</a>.
+  </p>
 </body>
 </html>
